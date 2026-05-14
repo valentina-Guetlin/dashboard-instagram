@@ -1,0 +1,22 @@
+# Secrets — NEVER commit these
+.env
+.streamlit/secrets.toml
+
+# Local data & cache
+data.nosync/
+*.db
+
+# Python
+__pycache__/
+.venv/
+*.pyc
+*.pyo
+*.pyd
+
+# OS
+.DS_Store
+Thumbs.db
+
+# One-off scripts
+_notion_seed.py
+assets/candidates/
