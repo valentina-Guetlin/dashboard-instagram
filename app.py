@@ -3,6 +3,7 @@ Dashboard local de análisis de Instagram + Facebook - Neon Giant Moving
 Run: .venv/Scripts/streamlit run app.py
 """
 import os
+import pathlib
 import re
 import json
 from datetime import datetime, timezone
@@ -52,7 +53,7 @@ PLATFORM_COLORS = {
     "facebook": "#22aee4",
 }
 
-LOGO_PATH = r"C:\Users\jeff\OneDrive - BackBreakers PNW\Neon Giant\Logo Designs\Tina's Neon Giant Logos\HorizontalLogo\RGB\NeonGiant_HorizontalLogo-NoGlow-NoBckgrd_RGB.png"
+LOGO_PATH = str(pathlib.Path(__file__).parent / "assets" / "logo.png")
 
 
 def _inject_brand_css():
