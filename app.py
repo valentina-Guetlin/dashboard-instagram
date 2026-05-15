@@ -377,7 +377,7 @@ def render_header():
                 pic_col, info_col = st.columns([1, 3])
                 with pic_col:
                     if pic:
-                        st.image(pic, width=52, use_column_width=False)
+                        st.image(pic, width=52, use_container_width=False)
                 with info_col:
                     st.markdown(
                         f'<span style="color:{accent};font-weight:700;">{label} {display}</span>',
